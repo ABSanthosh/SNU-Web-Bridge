@@ -1,8 +1,6 @@
 @import './fonts.scss';
 @import './Crisp/index.scss';
 
-$scrollbarWidth: 8px;
-
 :root{
 	--body: #7F1416;
 	--foreground: #11181c;
@@ -56,16 +54,6 @@ body,
 	background-color: var(--body);
 	// min-height: 100vh;
 	@include make-flex($just: flex-start);
-}
-
-.Content {
-	&--maxWidth {
-		@include box();
-		@include make-flex($just: flex-start);
-		padding: 64px 20px 20px 20px;
-		// max-width: $maxWidth;
-		gap: 15px;
-	}
 }
 
 // global needs
