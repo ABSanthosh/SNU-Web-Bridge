@@ -9,6 +9,7 @@ const config = {
   preprocess: preprocess({
     scss: {
       prependData: `
+        @use "src/styles/_variables" as *;
 				@import "src/styles/_mixins.scss";
 			`,
     },
